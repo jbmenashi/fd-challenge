@@ -22,6 +22,7 @@ body {
 
 #navbar-item:hover {
    background-color: #4C565D;
+   cursor: pointer;
 }
 
 #navbar-item.active.item {
@@ -130,6 +131,7 @@ body {
 #all-games-item:hover {
    color: #91B46E;
    font-weight: bold;
+   cursor: pointer;
 }
 
 #games-menu-divider {
@@ -157,7 +159,7 @@ body {
 }
 
 #footer-menu .item {
-   width: 12%;
+   width: 13%;
    height: 100%;
    color:  #4F5961;
    font-weight: bold;
@@ -175,6 +177,7 @@ body {
 #footer-menu .item:hover {
    background-color: #6FA83E;
    color: white;
+   cursor: pointer;
 }
 
 #footer-scores {
@@ -194,6 +197,12 @@ body {
    color: white;
    border-left: 1px solid gray;
    border-right: 1px solid gray;
+   cursor: pointer;
+}
+
+.footer-score.super {
+   width: 45%;
+   background-color: #616A71;
 }
 
 .footer-score-scores {
@@ -212,6 +221,10 @@ body {
    color: #94999C;
 }
 
+.footer-score-abbrv.super {
+   color: white;
+}
+
 .footer-score-points {
    width: 20%;
    height: 25%;
@@ -223,8 +236,19 @@ body {
    color: #94999C;
 }
 
+.footer-score-points.super {
+   color: white;
+}
+
 .footer-score-time {
+   clear: both;
    margin-left: 1em;
    color: #94999C;
    font-size: 1.5em;
+}
+
+.footer-score-time.super {
+   color: white;
+   margin-left: 1.5em;
+   font-size: 1em;
 }

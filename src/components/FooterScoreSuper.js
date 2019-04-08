@@ -21,20 +21,19 @@ class FooterScore extends Component {
       }
 
       return (
-         <div className="footer-score" onClick={() => this.props.changeFooterScore(this.props.game_id)}>
+         <div className="footer-score super" onClick={() => this.props.changeFooterScore(this.props.game_id)}>
             <div className="footer-score-scores">
-               <div className="footer-score-abbrv">
-                  {this.props.away_team.abbrev} <br/>
-                  {this.props.home_team.abbrev}
+               <div className="footer-score-abbrv super">
+                  {this.props.away_team.name.toUpperCase()} <br/>
+                  {this.props.home_team.name.toUpperCase()}
                </div>
-               <div className="footer-score-points">
+               <div className="footer-score-points super">
                   {this.props.away_team.score} <br />
                   {this.props.home_team.score}
                </div>
             </div>
-
-            <div className="footer-score-time">
-               {this.props.time_left} {this.props.quarter}{suf}
+            <div className="footer-score-time super">
+               {this.props.time_left} {this.props.quarter}{suf} - TV: ESPN
             </div>
          </div>
       );

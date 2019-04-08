@@ -2,6 +2,7 @@ import React, { Component, Fragment } from 'react';
 import { Menu, Icon } from 'semantic-ui-react';
 import { connect } from 'react-redux';
 import FooterScore from './FooterScore'
+import FooterScoreSuper from './FooterScoreSuper'
 
 const mapStateToProps = state => {
    return {
@@ -26,7 +27,16 @@ class Footer extends Component {
                   <Icon size="big" name="angle left"/>
                </div>
                <div id="footer-scores">
-                  {this.props.footerScores.map(score => <FooterScore {...score} key={score.game_id}/>)}
+                  
+                  {this.props.footerScores.map(score => {
+                     if (this.props.activeFooterId === score.game_id) {
+                        return <FooterScoreSuper {...score} key={score.game_id}/>
+                     }
+                     else {
+                        return <FooterScore {...score} key={score.game_id}/>
+                     }
+                  })}
+                     
                </div>
             </div>
          </Fragment>
