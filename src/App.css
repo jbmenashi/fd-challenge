@@ -50,6 +50,39 @@ body {
 
 #play {
    border-bottom: 1px solid rgb(206, 196, 196);
+   float: left;
+   width: 100%;
+   height: 100%;
+}
+
+#play:hover {
+   background-image: linear-gradient(white, #FFFAEC);
+}
+
+#play-image {
+   float: left;
+   width: 20%
+}
+
+#play-image img {
+   border-radius: 100%;
+}
+
+#play-info {
+   float: left;
+   width: 60%;
+   margin-top: 0.5em;
+}
+#play-desc {
+   font-weight: bold;
+}
+
+#play-score {
+   float: left;
+   width: 20%;
+   margin-top: 2em;
+   text-align: center;
+   font-weight: bold;
 }
 
 /* STATS */
