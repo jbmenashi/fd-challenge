@@ -6,6 +6,7 @@ import Navbar from './components/Navbar';
 import Scoring from './components/Scoring';
 import Stats from './components/Stats';
 import PlayByPlay from './components/PlayByPlay'
+import InfoBox from './components/InfoBox'
 
 const mapStateToProps = state => {
    return {
@@ -39,7 +40,9 @@ class App extends Component {
                   <Grid.Column width={11} id="left-column">
                      <Grid stretched columns={1}>
                         <Grid.Column width={16}>
-                           <Segment>1</Segment>
+                           <Segment>
+                              <InfoBox/>
+                           </Segment>
                         </Grid.Column>
                      </Grid>
                      <Grid stretched columns={2}>
