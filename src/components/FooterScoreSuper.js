@@ -20,6 +20,24 @@ class FooterScore extends Component {
          suf = "th"
       }
 
+      let stats1;
+      let stats2;
+      let stats3;
+      let stats4;
+
+      if (this.props.home_team.abbrev === this.props.top_performers[0].team) {
+         stats1 = `${this.props.top_performers[0].name}, ${this.props.top_performers[0].position}`
+         stats2 = `${this.props.top_performers[0].points} points, ${this.props.top_performers[0].rebounds} rebounds`
+         stats3 = `${this.props.top_performers[1].name}, ${this.props.top_performers[1].position}`
+         stats4 = `${this.props.top_performers[1].points} points, ${this.props.top_performers[1].rebounds} rebounds`   
+      }
+      else {
+         stats3 = `${this.props.top_performers[0].name}, ${this.props.top_performers[0].position}`
+         stats4 = `${this.props.top_performers[0].points} points, ${this.props.top_performers[0].rebounds} rebounds`
+         stats1 = `${this.props.top_performers[1].name}, ${this.props.top_performers[1].position}`
+         stats2 = `${this.props.top_performers[1].points} points, ${this.props.top_performers[1].rebounds} rebounds`   
+      }
+
       return (
          <div className="footer-score super" onClick={() => this.props.changeFooterScore(this.props.game_id)}>
             <div className="footer-score-scores">
@@ -28,8 +46,26 @@ class FooterScore extends Component {
                   {this.props.home_team.name.toUpperCase()}
                </div>
                <div className="footer-score-points super">
-                  {this.props.away_team.score} <br />
+                  {this.props.away_team.score} <br/>
                   {this.props.home_team.score}
+               </div>
+            </div>
+            <div className="star-player">
+               <div className="star-player-team">
+                  {this.props.away_team.abbrev}
+               </div>
+               <div className="star-player-stats">
+                  {stats3} <br/>
+                  {stats4}
+               </div>
+            </div>
+            <div classname="star-player">
+               <div className="star-player-team">
+                  {this.props.home_team.abbrev}
+               </div>
+               <div className="star-player-stats">
+                  {stats1} <br/>
+                  {stats2}
                </div>
             </div>
             <div className="footer-score-time super">
