@@ -1,5 +1,14 @@
 import React, { Component, Fragment } from 'react';
-import { Menu } from 'semantic-ui-react';
+import { Menu, Icon } from 'semantic-ui-react';
+import { connect } from 'react-redux';
+import FooterScore from './FooterScore'
+
+const mapStateToProps = state => {
+   return {
+      footerScores: state.footerScores,
+      activeFooterId: state.activeFooterId
+   }
+}
 
 class Footer extends Component {
    render() {
@@ -13,8 +22,11 @@ class Footer extends Component {
                      <Menu.Item name='NCAAF'/>
                   </Menu>
                </div>
+               <div id="icon-left">
+                  <Icon size="big" name="angle left"/>
+               </div>
                <div id="footer-scores">
-
+                  {this.props.footerScores.map(score => <FooterScore {...score} key={score.game_id}/>)}
                </div>
             </div>
          </Fragment>
@@ -22,4 +34,7 @@ class Footer extends Component {
    }
 }
 
-export default Footer;
+export default connect(mapStateToProps)(Footer);
+
+
+// if the score.game_id matches the active ID, map out a different component, else just do a score
