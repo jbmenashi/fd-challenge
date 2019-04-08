@@ -4,7 +4,13 @@ import {connect} from 'react-redux';
 
 const mapStateToProps = state => {
    return {
-      test: state.test
+      funds: state.funds
+   }
+}
+
+const mapDispatchToProps = dispatch => {
+   return {
+      addFunds: () => dispatch({type: 'ADD_FUNDS'}) //changes funds when you click button, doesn't change display for visual
    }
 }
 
@@ -18,15 +24,15 @@ class Navbar extends Component {
             </Menu.Item>
             <Menu.Item name="lobby" id="navbar-item" />
             <Menu.Item name="upcoming" id="navbar-item" />
-            <Menu.Item name="live" id="navbar-item">Live<Icon name="angle down"/></Menu.Item>
+            <Menu.Item active name="live" id="navbar-item">Live<Icon name="angle down"/></Menu.Item>
             <Menu.Item name="history" id="navbar-item" />
             <Menu.Menu position="right">
                <Menu.Item name="help" id="navbar-item">Help<Icon name="angle down"/></Menu.Item>
                <Menu.Item name="username" id="navbar-item"><Icon name="user circle"/>User<Icon name="angle down"/></Menu.Item>
                <Menu.Item name="funds" id="navbar-item">
                   $1,000,000.00  <br/>
-                  BALANCE  
-                  <Button color="green">Add Funds</Button>
+                  BALANCE    
+                  <Button color="green" size="small" onClick={() => this.props.addFunds()}>Add funds</Button>
                </Menu.Item>
             </Menu.Menu> 
          </Menu>
@@ -35,4 +41,4 @@ class Navbar extends Component {
   }
 }
 
-export default connect(mapStateToProps)(Navbar);
+export default connect(mapStateToProps, mapDispatchToProps)(Navbar);

@@ -1,3 +1,7 @@
+body {
+   background-color: #BCBCBC;
+}
+
 #navbar {
    height: 5em;
    background-color: #2D363B;
@@ -8,3 +12,8 @@
    color: white;
    margin-left: 0px;
 }
+
+#navbar-item.active.item {
+   background-color: #4C565D;
+}
+
