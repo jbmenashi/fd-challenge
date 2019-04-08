@@ -1,8 +1,9 @@
 import React, { Component, Fragment } from 'react';
-import { Menu, Icon, Button } from 'semantic-ui-react';
+import { Grid, Segment } from 'semantic-ui-react';
 import './App.css';
 import {connect} from 'react-redux';
-import Navbar from './Navbar'
+import Navbar from './Navbar';
+import Scoring from './Scoring';
 
 const mapStateToProps = state => {
    return {
@@ -15,6 +16,18 @@ class App extends Component {
     return (
       <Fragment>
          <Navbar/>
+         <Grid columns='equal' padded>
+            <Grid.Row stretched>
+               <Grid.Column width={11} id="left-column">
+                  <Segment>1</Segment>
+               </Grid.Column>
+               <Grid.Column width={5} id="right-column">
+                  <Segment>
+                     <Scoring />
+                  </Segment>
+               </Grid.Column>
+            </Grid.Row>
+         </Grid>
       </Fragment>
     );
   }

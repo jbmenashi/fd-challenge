@@ -1,6 +1,13 @@
 body {
    background-color: #BCBCBC;
+   font-family: 'Quicksand', sans-serif;
 }
+
+.ui.segment {
+   padding: 0;
+}
+
+/* NAVBAR */
 
 #navbar {
    height: 5em;
@@ -13,7 +20,51 @@ body {
    margin-left: 0px;
 }
 
+#navbar-item:hover {
+   background-color: #4C565D;
+}
+
 #navbar-item.active.item {
    background-color: #4C565D;
 }
 
+/* GAME INFO */
+
+#left-column {
+   padding-left: 5em;
+}
+
+/* SCORING */
+
+#right-column {
+   height: 50em;
+   padding-right: 5em;
+}
+
+#your-scoring {
+   background-color: black;
+   color: white;
+   height: 3em;
+   text-align: center;
+   padding-top: 1em;
+   font-size: 1.5em;
+   border-radius: 3px;
+}
+
+#games-menu {
+   font-family: 'Quicksand', sans-serif;
+   height: 1em;
+   margin: 0;
+}
+
+#this-game-item {
+   color: #91B46E;
+}
+
+#all-games-item:hover {
+   color: #91B46E;
+}
+
+#games-menu-divider {
+   margin: 0;
+}
