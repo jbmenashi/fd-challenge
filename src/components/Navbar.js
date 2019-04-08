@@ -20,7 +20,7 @@ class Navbar extends Component {
       <Fragment>
          <Menu size='massive' id="navbar">
             <Menu.Item>
-               <img src="https://botw-pd.s3.amazonaws.com/styles/logo-thumbnail/s3/032018/untitled-1_341.png?FbJ4ipi9S5_57j4d8bj_0xIeiwDUP1TD&itok=pVUrNAy2" />
+               <img src={require(`../images/fanduel_logo.png`)} alt="" />
             </Menu.Item>
             <Menu.Item name="lobby" id="navbar-item" />
             <Menu.Item name="upcoming" id="navbar-item" />
@@ -30,7 +30,7 @@ class Navbar extends Component {
                <Menu.Item name="help" id="navbar-item">Help<Icon name="angle down"/></Menu.Item>
                <Menu.Item name="username" id="navbar-item"><Icon name="user circle"/>User<Icon name="angle down"/></Menu.Item>
                <Menu.Item name="funds" id="navbar-item">
-                  $1,000,000.00  <br/>
+                  $1,000,000.00   <br/>
                   BALANCE    
                   <Button color="green" size="small" onClick={() => this.props.addFunds()}>Add funds</Button>
                </Menu.Item>
