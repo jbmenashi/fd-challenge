@@ -3,10 +3,11 @@ import { Grid, Segment } from 'semantic-ui-react';
 import './App.css';
 import {connect} from 'react-redux';
 import Navbar from './components/Navbar';
-import Scoring from './components/Scoring';
+import InfoBox from './components/InfoBox';
+import PlayByPlay from './components/PlayByPlay';
 import Stats from './components/Stats';
-import PlayByPlay from './components/PlayByPlay'
-import InfoBox from './components/InfoBox'
+import Scoring from './components/Scoring';
+import Footer from './components/Footer';
 
 const mapStateToProps = state => {
    return {
@@ -65,6 +66,7 @@ class App extends Component {
                   </Grid.Column>
                </Grid.Row>
             </Grid>
+            <Footer/>
          </Fragment>
       );
    }

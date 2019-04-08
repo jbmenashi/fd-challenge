@@ -136,3 +136,35 @@ body {
    margin: 0;
 }
 
+/* FOOTER */
+
+#footer {
+   background-color: #4F5961;
+   z-index: 6;
+   display: block;
+   height: 10em;
+   width: 100%;
+   bottom: 0;
+}
+
+#footer-sports {
+   height: 20%;
+   background-color: #2D363B;
+}
+
+#footer-menu .item {
+   width: 10%;
+   color:  #4F5961;
+   font-weight: bold;
+   border-right: 1px solid gray;
+   border-radius: 0;
+}
+
+#footer-menu .active.item {
+   background-color: #6FA83E;
+   color: white;
+}
+
+#footer-scores {
+   height: 80%;
+}
