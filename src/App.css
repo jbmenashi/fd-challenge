@@ -35,6 +35,32 @@ body {
    height: 70em;
 }
 
+/* PlAY BY PLAY */
+
+#play-by-play {
+   background-color: black;
+   color: white;
+   font-weight: bold;
+   height: 3em;
+   text-align: center;
+   padding-top: 1em;
+   font-size: 1.5em;
+   border-radius: 3px;
+}
+
+/* STATS */
+
+#stats {
+   background-color: black;
+   color: white;
+   font-weight: bold;
+   height: 3em;
+   text-align: center;
+   padding-top: 1em;
+   font-size: 1.5em;
+   border-radius: 3px;
+}
+
 /* SCORING */
 
 #right-column {
@@ -45,6 +71,7 @@ body {
 #your-scoring {
    background-color: black;
    color: white;
+   font-weight: bold;
    height: 3em;
    text-align: center;
    padding-top: 1em;
@@ -60,10 +87,12 @@ body {
 
 #this-game-item {
    color: #91B46E;
+   font-weight: bold;
 }
 
 #all-games-item:hover {
    color: #91B46E;
+   font-weight: bold;
 }
 
 #games-menu-divider {

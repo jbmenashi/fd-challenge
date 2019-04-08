@@ -2,14 +2,11 @@ import React, { Component, Fragment } from 'react';
 import { Menu, Divider } from 'semantic-ui-react';
 
 class Scoring extends Component {
-   state = {  }
    render() {
       return (
          <Fragment>
             <div id="your-scoring">
-            YOUR SCORING
-
-            
+               YOUR SCORING
             </div>
             <Menu secondary id="games-menu">
                <Menu.Item name="THIS GAME" id="this-game-item"/>

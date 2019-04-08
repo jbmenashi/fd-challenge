@@ -4,6 +4,8 @@ import './App.css';
 import {connect} from 'react-redux';
 import Navbar from './components/Navbar';
 import Scoring from './components/Scoring';
+import Stats from './components/Stats';
+import PlayByPlay from './components/PlayByPlay'
 
 const mapStateToProps = state => {
    return {
@@ -26,10 +28,14 @@ class App extends Component {
                   </Grid>
                   <Grid stretched columns={2}>
                      <Grid.Column width={8}>
-                        <Segment>2</Segment>
+                        <Segment>
+                           <PlayByPlay/>
+                        </Segment>
                      </Grid.Column>
                      <Grid.Column width={8}>
-                        <Segment>3</Segment>
+                        <Segment>
+                           <Stats/>
+                        </Segment>          
                      </Grid.Column>
                   </Grid>     
                </Grid.Column>
