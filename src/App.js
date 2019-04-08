@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from 'react';
-import { Menu } from 'semantic-ui-react';
+import { Menu, Icon, Button } from 'semantic-ui-react';
 import './App.css';
 import {connect} from 'react-redux';
 
@@ -19,12 +19,16 @@ class App extends Component {
             </Menu.Item>
             <Menu.Item name="lobby" id="navbar-item" />
             <Menu.Item name="upcoming" id="navbar-item" />
-            <Menu.Item name="live" id="navbar-item" />
+            <Menu.Item name="live" id="navbar-item">Live<Icon name="angle down"/></Menu.Item>
             <Menu.Item name="history" id="navbar-item" />
             <Menu.Menu position="right">
-               <Menu.Item name="help" id="navbar-item" />
-               <Menu.Item name="username" id="navbar-item" />
-               <Menu.Item name="funds" id="navbar-item" />
+               <Menu.Item name="help" id="navbar-item">Help<Icon name="angle down"/></Menu.Item>
+               <Menu.Item name="username" id="navbar-item"><Icon name="user circle"/>User<Icon name="angle down"/></Menu.Item>
+               <Menu.Item name="funds" id="navbar-item">
+                  $1,000,000.00  <br/>
+                  BALANCE  
+                  <Button color="green">Add Funds</Button>
+               </Menu.Item>
             </Menu.Menu>
             
          </Menu>
