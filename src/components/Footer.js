@@ -47,6 +47,3 @@ class Footer extends Component {
 }
 
 export default connect(mapStateToProps)(Footer);
-
-
-// if the score.game_id matches the active ID, map out a different component, else just do a score

@@ -28,7 +28,7 @@ class FooterScore extends Component {
                   {this.props.home_team.abbrev}
                </div>
                <div className="footer-score-points">
-                  {this.props.away_team.score} <br />
+                  {this.props.away_team.score} <br/>
                   {this.props.home_team.score}
                </div>
             </div>

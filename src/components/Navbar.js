@@ -1,18 +1,5 @@
 import React, { Component, Fragment } from 'react';
 import { Menu, Icon, Button } from 'semantic-ui-react';
-import {connect} from 'react-redux';
-
-const mapStateToProps = state => {
-   return {
-      funds: state.funds
-   }
-}
-
-const mapDispatchToProps = dispatch => {
-   return {
-      addFunds: () => dispatch({type: 'ADD_FUNDS'}) //changes funds when you click button, doesn't change display for visual
-   }
-}
 
 class Navbar extends Component {
   render() {
@@ -34,11 +21,11 @@ class Navbar extends Component {
                   BALANCE       
                </Menu.Item>
             </Menu.Menu> 
-            <Button id="button" color="green" size="tiny" onClick={() => this.props.addFunds()}>Add funds</Button>
+            <Button id="button" color="green" size="tiny">Add funds</Button>
          </Menu>
       </Fragment>
     );
   }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Navbar);
+export default Navbar;
