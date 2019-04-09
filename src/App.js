@@ -9,14 +9,6 @@ import Stats from './components/Stats';
 import Scoring from './components/Scoring';
 import Footer from './components/Footer';
 
-const mapStateToProps = state => {
-   return {
-      plays: state.plays,
-      footerScores: state.footerScores,
-      gameInfo: state.gameInfo
-   }
-}
-
 const mapDispatchToProps = dispatch => {
    return {
       fetchPlays: (plays) => dispatch({type: "FETCH_PLAYS", payload: plays}),
@@ -89,4 +81,4 @@ class App extends Component {
    }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+export default connect(null, mapDispatchToProps)(App);

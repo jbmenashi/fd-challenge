@@ -30,11 +30,11 @@ class Navbar extends Component {
                <Menu.Item name="help" id="navbar-item">Help<Icon name="angle down"/></Menu.Item>
                <Menu.Item name="username" id="navbar-item"><Icon name="user circle"/>User<Icon name="angle down"/></Menu.Item>
                <Menu.Item name="funds" id="navbar-item">
-                  $1,000,000.00   <br/>
-                  BALANCE    
-                  <Button color="green" size="small" onClick={() => this.props.addFunds()}>Add funds</Button>
+                  $1,000,000.00<br/>
+                  BALANCE       
                </Menu.Item>
             </Menu.Menu> 
+            <Button id="button" color="green" size="tiny" onClick={() => this.props.addFunds()}>Add funds</Button>
          </Menu>
       </Fragment>
     );
