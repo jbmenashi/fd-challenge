@@ -12,14 +12,16 @@ import Footer from './components/Footer';
 const mapStateToProps = state => {
    return {
       plays: state.plays,
-      footerScores: state.footerScores
+      footerScores: state.footerScores,
+      gameInfo: state.gameInfo
    }
 }
 
 const mapDispatchToProps = dispatch => {
    return {
       fetchPlays: (plays) => dispatch({type: "FETCH_PLAYS", payload: plays}),
-      fetchFooterScores: (scores) => dispatch({type: "FETCH_FOOTER_SCORES", payload: scores})
+      fetchFooterScores: (scores) => dispatch({type: "FETCH_FOOTER_SCORES", payload: scores}),
+      fetchGameInfo: (gameInfo) => dispatch({type: "FETCH_GAME_INFO", payload: gameInfo})
    }
 }
 
@@ -31,6 +33,7 @@ class App extends Component {
       .then(data => {
          this.props.fetchPlays(data.plays)
          this.props.fetchFooterScores(data.footer_scoreboard)
+         this.props.fetchGameInfo(data.game_stats)
       })
    }
 

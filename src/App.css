@@ -29,11 +29,64 @@ body {
    background-color: #4C565D;
 }
 
-/* GAME INFO */
+/* INFO BOX */
 
 #left-column {
    padding-left: 5em;
    height: 70em;
+}
+
+#infobox-div {
+   height: 33em;
+}
+
+#infobox-row-1 {
+   height: 30%;
+}
+
+#infobox-row-2 {
+   height: 5%;
+   background-color: #F2F2F2;
+   text-align: center;
+   padding: 2px;
+}
+
+#infobox-row-3 {
+   height: 70%;
+}
+
+#infobox-away-team {
+   color: #FEBA00;
+   font-size: 2em;
+   padding-top: 10px;
+}
+
+#infobox-away-score {
+   color: #FEBA00;
+   font-size: 5em;
+   font-weight: bold;
+   text-align: left;
+   right: 42px;
+}
+
+#infobox-game-info {
+   border-left: 1px solid gray;
+   border-right: 1px solid gray;
+}
+
+#infobox-home-score {
+   color: #007BC5;
+   font-size: 5em;
+   font-weight: bold;
+   text-align: right;
+   padding-right: 0;
+}
+
+#infobox-home-team {
+   color: #007BC5;
+   font-size: 2em;
+   text-align: right;
+   padding-top: 10px;
 }
 
 /* PlAY BY PLAY */

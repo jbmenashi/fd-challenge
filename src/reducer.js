@@ -2,7 +2,8 @@ const initialState = {
    funds: 1000000.00,
    plays: [],
    footerScores: [],
-   activeFooterId: 1
+   activeFooterId: 1,
+   gameInfo: ''
 }
 
 export default (state = initialState, action) => {
@@ -15,6 +16,8 @@ export default (state = initialState, action) => {
          return {...state, footerScores: action.payload}
       case 'CHANGE_FOOTER_SCORE':
          return {...state, activeFooterId: action.payload}
+      case 'FETCH_GAME_INFO':
+         return {...state, gameInfo: action.payload}
       default:
          return state
    }
