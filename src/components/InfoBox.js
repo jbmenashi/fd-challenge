@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from 'react';
-import { Grid, Icon } from 'semantic-ui-react';
+import { Grid, Icon, Divider } from 'semantic-ui-react';
 import { connect } from 'react-redux';
 
 const mapStateToProps = state => {
@@ -10,6 +10,7 @@ const mapStateToProps = state => {
 
 class InfoBox extends Component {
    render() {
+      console.log(this.props.gameInfo.away_team)
       return (
          <Fragment>
             <div id="infobox-div">
@@ -49,16 +50,35 @@ class InfoBox extends Component {
                         <p>SHOW: <span style={{fontWeight: 'bold'}}>RECENT SHOTS</span><Icon name="angle down"/></p>
                      </Grid.Column>
                   </Grid.Row>
-
                   <Grid.Row id="infobox-row-4">
-                     <Grid.Column width={4}>
-                        A
+                     <Grid.Column width={4} id="infobox-away-stats">
+                        <Grid.Row>
+                           <p>FG%<br/>55.7%</p>
+                        </Grid.Row>
+                        <Divider/>
+                        <Grid.Row>
+                           test
+                        </Grid.Row>
+                        <Divider/>
+                        <Grid.Row>
+                           test
+                        </Grid.Row>
                      </Grid.Column>
                      <Grid.Column width={8}>
                         <img src={require(`../images/shot_chart.png`)} alt="" />
                      </Grid.Column>
-                     <Grid.Column width={4}>
-                        C
+                     <Grid.Column width={4} id="infobox-home-stats">
+                        <Grid.Row>
+                           test
+                        </Grid.Row>
+                        <Divider/>
+                        <Grid.Row>
+                           test
+                        </Grid.Row>
+                        <Divider/>
+                        <Grid.Row>
+                           test
+                        </Grid.Row>
                      </Grid.Column>
                   </Grid.Row>
                </Grid>

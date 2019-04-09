@@ -100,6 +100,14 @@ body {
    padding-top: 10px;
 }
 
+#infobox-away-stats{
+   text-align: center;
+}
+
+#infobox-home-stats{
+   text-align: center;
+}
+
 /* PlAY BY PLAY */
 
 #play-by-play {
