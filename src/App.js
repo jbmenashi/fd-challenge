@@ -25,6 +25,9 @@ const mapDispatchToProps = dispatch => {
 
 class App extends Component {
 
+   // I ran into a small issue where I couldn't parse through some of the game_stats JSON object,
+   // so fetching the individual objects for shooting stats seemed like the most reasonable workaround.
+
    componentDidMount() {
       fetch("https://my-json-server.typicode.com/fanduel/moneyball-fe-challenge-data/db")
       .then(res => res.json())

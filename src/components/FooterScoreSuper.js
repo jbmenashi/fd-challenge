@@ -20,6 +20,9 @@ class FooterScore extends Component {
          suf = "th"
       }
 
+      // In the JSON data I was given, one game had the home and away top_performer flipped, so I thought this would be the best way to
+      // display the data consistently - seeing if the right abbrevations/teams matched up, and assigning the stats based on that.
+
       let stats1;
       let stats2;
       let stats3;

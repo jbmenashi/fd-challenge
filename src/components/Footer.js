@@ -29,12 +29,15 @@ class Footer extends Component {
                <div id="icon-right">
                   <Icon size="big" name="angle right"/>
                </div>
-               <div id="footer-scores">      
+               <div id="footer-scores">
                   {this.props.footerScores.map(score => {
                      if (this.props.activeFooterId === score.game_id) {
+                        // Clicking on different scores on the bottom changes the conditional, resulting in different components
+                        // This is the elongated score with stats...
                         return <FooterScoreSuper {...score} key={score.game_id}/>
                      }
                      else {
+                        // ...and this is the short score
                         return <FooterScore {...score} key={score.game_id}/>
                      }
                   })}
