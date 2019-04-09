@@ -100,12 +100,28 @@ body {
    padding-top: 10px;
 }
 
-#infobox-away-stats{
+#infobox-away-stats {
    text-align: center;
 }
 
-#infobox-home-stats{
+#infobox-home-stats {
    text-align: center;
+}
+
+.infobox-stat-title {
+   font-size: 1.5em;
+}
+
+.infobox-away-stat {
+   font-size: 2em;
+   color: #FEBA00;
+   padding-top: 10px;
+}
+
+.infobox-home-stat {
+   font-size: 2em;
+   color: #007BC5;
+   padding-top: 10px;
 }
 
 /* PlAY BY PLAY */

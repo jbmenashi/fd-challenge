@@ -4,13 +4,18 @@ import { connect } from 'react-redux';
 
 const mapStateToProps = state => {
    return {
-      gameInfo: state.gameInfo
+      gameInfo: state.gameInfo,
+      awayFG: state.awayFG,
+      awayFT: state.awayFT,
+      away3P: state.away3P,
+      homeFG: state.homeFG,
+      homeFT: state.homeFT,
+      home3P: state.home3P
    }
 }
 
 class InfoBox extends Component {
    render() {
-      console.log(this.props.gameInfo.away_team)
       return (
          <Fragment>
             <div id="infobox-div">
@@ -53,15 +58,30 @@ class InfoBox extends Component {
                   <Grid.Row id="infobox-row-4">
                      <Grid.Column width={4} id="infobox-away-stats">
                         <Grid.Row>
-                           <p>FG%<br/>55.7%</p>
+                           <div class="infobox-stat-title">
+                              {this.props.awayFG.title}
+                           </div>
+                           <div class="infobox-away-stat">
+                              {this.props.awayFG.perc}
+                           </div>
                         </Grid.Row>
                         <Divider/>
                         <Grid.Row>
-                           test
+                           <div class="infobox-stat-title">
+                              {this.props.awayFT.title}
+                           </div>
+                           <div class="infobox-away-stat">
+                              {this.props.awayFT.perc}
+                           </div>
                         </Grid.Row>
                         <Divider/>
                         <Grid.Row>
-                           test
+                           <div class="infobox-stat-title">
+                              {this.props.away3P.title}
+                           </div>
+                           <div class="infobox-away-stat">
+                              {this.props.away3P.perc}
+                           </div>
                         </Grid.Row>
                      </Grid.Column>
                      <Grid.Column width={8}>
@@ -69,15 +89,30 @@ class InfoBox extends Component {
                      </Grid.Column>
                      <Grid.Column width={4} id="infobox-home-stats">
                         <Grid.Row>
-                           test
+                           <div class="infobox-stat-title">
+                              {this.props.homeFG.title}
+                           </div>
+                           <div class="infobox-home-stat">
+                              {this.props.homeFG.perc}
+                           </div>
                         </Grid.Row>
                         <Divider/>
                         <Grid.Row>
-                           test
+                           <div class="infobox-stat-title">
+                              {this.props.homeFT.title}
+                           </div>
+                           <div class="infobox-home-stat">
+                              {this.props.homeFT.perc}
+                           </div>
                         </Grid.Row>
                         <Divider/>
                         <Grid.Row>
-                           test
+                           <div class="infobox-stat-title">
+                              {this.props.home3P.title}
+                           </div>
+                           <div class="infobox-home-stat">
+                              {this.props.home3P.perc}
+                           </div>
                         </Grid.Row>
                      </Grid.Column>
                   </Grid.Row>
