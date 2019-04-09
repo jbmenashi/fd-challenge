@@ -72,6 +72,10 @@ body {
 #infobox-game-info {
    border-left: 1px solid gray;
    border-right: 1px solid gray;
+   text-align: center;
+   font-weight: bold;
+   font-size: 1.2em;
+   padding-top: 1em;
 }
 
 #infobox-home-score {
