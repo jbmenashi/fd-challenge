@@ -4,7 +4,7 @@ class Stats extends Component {
    render() {
       return (
          <Fragment>
-            <div id="stats">
+            <div className="column-header-black">
                STATS
             </div>
          </Fragment>

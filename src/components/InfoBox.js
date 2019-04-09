@@ -56,7 +56,7 @@ class InfoBox extends Component {
                      </Grid.Column>
                   </Grid.Row>
                   <Grid.Row id="infobox-row-4">
-                     <Grid.Column width={4} id="infobox-away-stats">
+                     <Grid.Column width={4} className="infobox-stats">
                         <Grid.Row>
                            <div class="infobox-stat-title">
                               {this.props.awayFG.title}
@@ -87,7 +87,7 @@ class InfoBox extends Component {
                      <Grid.Column width={8}>
                         <img src={require(`../images/shot_chart.png`)} alt="" />
                      </Grid.Column>
-                     <Grid.Column width={4} id="infobox-home-stats">
+                     <Grid.Column width={4} className="infobox-stats">
                         <Grid.Row>
                            <div class="infobox-stat-title">
                               {this.props.homeFG.title}

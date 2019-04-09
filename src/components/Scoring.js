@@ -5,7 +5,7 @@ class Scoring extends Component {
    render() {
       return (
          <Fragment>
-            <div id="your-scoring">
+            <div className="column-header-black">
                YOUR SCORING
             </div>
             <Menu secondary id="games-menu">

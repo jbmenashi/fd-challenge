@@ -12,7 +12,7 @@ class PlayByPlay extends Component {
    render() {
       return (
          <Fragment>
-            <div id="play-by-play">
+            <div className="column-header-black">
                PLAY BY PLAY
             </div>
             <div id="plays">

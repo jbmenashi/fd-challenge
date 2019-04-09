@@ -16,7 +16,7 @@ class Footer extends Component {
       return (
          <Fragment>
             <div id="footer">
-               <div id="footer-sports">
+               <div id="footer-categories">
                   <Menu secondary size="small" id="footer-menu">
                      <Menu.Item active name='NBA'/>
                      <Menu.Item name='MLB'/>

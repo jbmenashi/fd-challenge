@@ -7,7 +7,7 @@ body {
    padding: 0;
 }
 
-/* NAVBAR */
+/****** NAVBAR ******/
 
 #navbar {
    height: 4.5em;
@@ -36,7 +36,7 @@ body {
    margin-right: 1.5em;
 }
 
-/* INFO BOX */
+/****** INFO BOX ******/
 
 #left-column {
    padding-left: 5em;
@@ -72,7 +72,7 @@ body {
 #infobox-away-team {
    color: #FEBA00;
    font-size: 2em;
-   padding-top: 10px;
+   padding-top: 0.3em;
 }
 
 #infobox-away-score {
@@ -80,7 +80,7 @@ body {
    font-size: 5em;
    font-weight: bold;
    text-align: left;
-   right: 42px;
+   right: 0.6em;
 }
 
 #infobox-game-info {
@@ -104,14 +104,10 @@ body {
    color: #007BC5;
    font-size: 2em;
    text-align: right;
-   padding-top: 10px;
+   padding-top: 0.3em;
 }
 
-#infobox-away-stats {
-   text-align: center;
-}
-
-#infobox-home-stats {
+.infobox-stats {
    text-align: center;
 }
 
@@ -131,9 +127,9 @@ body {
    padding-top: 10px;
 }
 
-/* PlAY BY PLAY */
+/****** PlAY BY PLAY ******/
 
-#play-by-play {
+.column-header-black {
    background-color: black;
    color: white;
    font-weight: bold;
@@ -181,35 +177,11 @@ body {
    font-weight: bold;
 }
 
-/* STATS */
-
-#stats {
-   background-color: black;
-   color: white;
-   font-weight: bold;
-   height: 3em;
-   text-align: center;
-   padding-top: 1em;
-   font-size: 1.5em;
-   border-radius: 3px;
-}
-
-/* SCORING */
+/****** SCORING ******/
 
 #right-column {
    height: 70em;
    padding-right: 5em;
-}
-
-#your-scoring {
-   background-color: black;
-   color: white;
-   font-weight: bold;
-   height: 3em;
-   text-align: center;
-   padding-top: 1em;
-   font-size: 1.5em;
-   border-radius: 3px;
 }
 
 #games-menu {
@@ -233,24 +205,24 @@ body {
    margin: 0;
 }
 
-/* FOOTER */
+/****** FOOTER ******/
 
 #footer {
    background-color: #4F5961;
-   z-index: 6;
-   display: block;
    height: 11em;
-   width: 100%;
-   bottom: 0;
 }
 
-#footer-sports {
+#footer-categories {
    height: 25%;
    background-color: #2D363B;
 }
 
+#footer-scores {
+   height: 75%;
+}
+
 #footer-menu {
-   margin-left: 2.75em;
+   margin-left: 2.8em;
 }
 
 #footer-menu .item {
@@ -275,12 +247,15 @@ body {
    cursor: pointer;
 }
 
-#footer-scores {
-   height: 75%;
-}
-
 #icon-left {
    float: left;
+   color: gray;
+   margin-top: 3em;
+   cursor: pointer;
+}
+
+#icon-right {
+   float: right;
    color: gray;
    margin-top: 3em;
    cursor: pointer;
@@ -304,16 +279,13 @@ body {
 
 .footer-score-scores {
    float: left;
-   position: relative;
 }
 
 .footer-score-abbrv {
    width: 35%;
    height: 25%;
    float: left;
-   margin-top: 1em;
-   margin-left: 1em;
-   margin-bottom: 1em;
+   margin: 1em 0 1em 1em;
    font-size: 1.5em;
    color: #94999C;
 }
@@ -365,11 +337,4 @@ body {
 .star-player-stats {
    margin-left: 1em;
    float: left;
-}
-
-#icon-right {
-   float: right;
-   color: gray;
-   margin-top: 3em;
-   cursor: pointer;
 }
