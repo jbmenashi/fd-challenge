@@ -188,6 +188,7 @@ body {
    float: left;
    color: gray;
    margin-top: 3em;
+   cursor: pointer;
 }
 
 .footer-score {
@@ -257,5 +258,23 @@ body {
 .star-player {
    width: 30%;
    float: left;
-   margin-top: 1em;
+   margin-top: 1.5em;
+}
+
+.star-player-team {
+   margin-left: 1em;
+   float: left;
+   font-weight: bold;
+}
+
+.star-player-stats {
+   margin-left: 1em;
+   float: left;
+}
+
+#icon-right {
+   float: right;
+   color: gray;
+   margin-top: 3em;
+   cursor: pointer;
 }

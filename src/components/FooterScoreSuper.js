@@ -59,7 +59,7 @@ class FooterScore extends Component {
                   {stats4}
                </div>
             </div>
-            <div classname="star-player">
+            <div className="star-player">
                <div className="star-player-team">
                   {this.props.home_team.abbrev}
                </div>

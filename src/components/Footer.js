@@ -26,8 +26,10 @@ class Footer extends Component {
                <div id="icon-left">
                   <Icon size="big" name="angle left"/>
                </div>
-               <div id="footer-scores">
-                  
+               <div id="icon-right">
+                  <Icon size="big" name="angle right"/>
+               </div>
+               <div id="footer-scores">      
                   {this.props.footerScores.map(score => {
                      if (this.props.activeFooterId === score.game_id) {
                         return <FooterScoreSuper {...score} key={score.game_id}/>
@@ -36,8 +38,8 @@ class Footer extends Component {
                         return <FooterScore {...score} key={score.game_id}/>
                      }
                   })}
-                     
                </div>
+
             </div>
          </Fragment>
       );
