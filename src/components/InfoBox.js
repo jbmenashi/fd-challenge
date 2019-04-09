@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from 'react';
-import { Grid } from 'semantic-ui-react';
+import { Grid, Icon } from 'semantic-ui-react';
 import { connect } from 'react-redux';
 
 const mapStateToProps = state => {
@@ -45,6 +45,12 @@ class InfoBox extends Component {
                      </Grid.Column>
                   </Grid.Row>
                   <Grid.Row id="infobox-row-3">
+                     <Grid.Column width={16}>
+                        <p>SHOW: <span style={{fontWeight: 'bold'}}>RECENT SHOTS</span><Icon name="angle down"/></p>
+                     </Grid.Column>
+                  </Grid.Row>
+
+                  <Grid.Row id="infobox-row-4">
                      <Grid.Column width={4}>
                         A
                      </Grid.Column>
